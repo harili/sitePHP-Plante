@@ -1,0 +1,635 @@
+@charset "ISO-8859-1";
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	html, body {
+	  	font-family: "Lucida Sans",sourcesanspro,arial,sans-serif;
+	  	background-color : #d2d2d2;
+	}
+	
+	
+	/****************************************************/
+	/*styles pour le menu principal                     */
+	/****************************************************/
+	nav.menuPrincipal{
+		background-color: #fff;
+		font-size: 0px;
+		text-align: right;
+		height: 30px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	nav.menuPrincipal ul {
+		display: inline-block;
+		list-style: none;
+		background-color: #fff;
+	}
+	
+	
+	nav.menuPrincipal ul li {
+		background-color: #fff;
+		display: inline-block;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: "Lucida Sans",sourcesanspro,arial,sans-serif;
+	}
+	
+	
+	nav.menuPrincipal ul li a {
+		display: table-cell;
+	    text-decoration: none;
+	  	color: grey;  
+	  	text-align: center;
+	  	vertical-align: middle;
+	  	height: 30px;
+	  	width: 120px;
+	}
+	
+	nav.menuPrincipal ul li a:hover {
+	  color: #292924;
+	}
+	
+	nav.menuPrincipal ul li .actif {
+		display: table-cell;
+	  	background-color: #fff;
+	  	color: #000;
+	  	text-align: center;
+	  	vertical-align: middle;
+	  	height: 30px;
+	  	width: 120px;
+	  	font-weight: bold;
+	}
+	
+	/****************************************************/
+	/*styles pour la zone navigation gauche 			*/
+	/****************************************************/ 
+	
+	a.anchor {
+	    display: block;
+	    position: relative;
+	    top: -200px;
+	    visibility: hidden;
+	}
+	
+	
+	.menuGauche{
+		position: fixed;
+		background-color: #fff;
+		overflow-x: hidden;
+	 	left: 0px;
+	 	margin-left : 1%;
+		height : 350px;;
+		width: 15%;
+		overflow-y: scroll;
+	 	border-right: 3px solid lightgrey;
+		border-bottom: 3px solid lightgrey;
+		border-top: 1px solid lightgrey;
+		border-left: 1px solid lightgrey;
+		
+		
+	}
+	.menuGauche ul{
+	  	list-style: none;
+	  	list-style-type: none; 
+		font-size: 16px;
+		text-align: left;
+		line-height: 20px;
+		padding-left: 10px;
+		padding-top: 6px;
+	}
+	.menuGauche li a {
+	  text-decoration: none;
+	  color: #292924; 
+	}
+	
+	nav.menuGauche ul li .actif {
+	  	font-weight: bold;
+	}
+	.menuGauche li a:hover {
+	  color: #041200;
+	  font-weight: bold;
+	}
+	
+	/****************************************************/
+	/*			identification		                    */
+	/****************************************************/
+	
+	.erreur{
+		position: fixed;
+	    margin-top: 21%;
+	    margin-left: 27%;
+	    width: 400px;
+	}
+	
+	/****************************************************/
+	/*			fin - identification		            */
+	/****************************************************/
+	/****************************************************/
+	/*			Contact						            */
+	/****************************************************/
+		
+	#message{
+		height : 200px;
+		width : 90%;
+		max-width : 90%;
+		resize: none;
+		font: 400 13.3333px Arial;
+	}
+
+	.formContact {
+		width: 90%; 
+	}
+
+
+	/****************************************************/
+	/*		Fin- 	Contact						        */
+	/****************************************************/
+	
+	/****************************************************/
+	/*			contenu du header	                    */
+	/****************************************************/
+	header {
+	
+	    height: 210px;
+	    position: fixed;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    z-index: 10;
+	
+	}
+	.bandeau img{
+		width : 100%;
+		height : 215px;
+		border-bottom: solid 5px green;
+		border-top: solid 1px black;
+		position: relative;
+ 		text-align: center;
+	  	color: white;
+	}
+	.message {
+	  	position: absolute;
+	  	top: 90%;
+	  	left: 16px;
+	  	color: #fff;
+	  	font-weight: bold;
+	 	font-size: 25px;
+	}
+	/****************************************************/
+	/*	contenu du footer  			                    */
+	/****************************************************/
+	footer {
+		margin-top: 50px;
+		background-color: #434541;
+		border-top: solid 5px green;
+		min-height: 50px;
+		color: white;
+		font-weight: bold;
+		font-size: 15px;	
+	}
+	
+	footer #w3c div {
+    	display: inline-block;
+	}
+	
+	.copyright{
+		margin-top: 1%;
+		padding-bottom: 1%;
+	}
+	
+	.copyright p a{
+		text-decoration: none;
+		font-weight: normal;
+		color: #fff;
+	}
+	
+	
+	
+	/****************************************************/
+	/*	contenu des pages			                    */
+	/****************************************************/
+	
+	.conteneur{
+		width : 100%;
+		text-align :center;
+		background-color : #fff;
+		margin-left : auto;
+		margin-right : auto;
+		margin-top: 250px;
+		min-height : 500px;
+		border: 0px;
+	}
+	
+	/*styles pour la zone gauche de la zone centrale de la page           */
+	
+	.gauche {
+		margin: 0;
+		padding: 0;
+		display: inline-block;	
+		border: 0px;
+		background-color: #fff;
+		width: 19%;
+		vertical-align: top;
+		font-size: 15px;
+		min-height : 500px;
+		margin-top: 35px;
+		
+	}
+	
+	
+	/*styles pour la zone droite de la zone centrale de la page           */
+	
+	.droite {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 79%;	
+		font-size: 15px;
+		vertical-align: top;
+		border: 0px;
+		min-height : 500px;
+		
+	}
+	
+	
+	
+	/****************************************************/
+	/*styles pour l'identification	                    */
+	/****************************************************/ 	
+
+	.connexion {
+		font-size: 15px;
+		width: 400px;
+		height: 240px;
+		border-right: 3px solid lightgrey;
+		border-bottom: 3px solid lightgrey;
+		border-top: 1px solid lightgrey;
+		border-left: 1px solid lightgrey;
+		margin-top: 5%;
+		position: fixed;
+		margin-left: 27%;
+		background: url(../images/connexion.jpg);
+	
+	}
+	
+	.connexion .titre{
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px;
+		background-color: skyblue;
+	}
+	
+	
+	.connexion .ligne{
+		padding: 15px;
+		text-align: center;
+		padding-top: 35px;
+	}
+	
+	.connexion .ligne label{
+		display: inline-block;
+		width: 150px;
+		text-align: right;
+		padding-right: 10px;
+		font-weight: bold;
+		color: #fff;
+		
+	}
+	
+	.connexion input#submit, input#reset{
+		display: inline-block;
+		width: 200px;
+		background-color: #2eb502;
+		border: 0px;
+	}
+	
+	
+	.connexion input[type=submit]{
+		display: inline-block;
+		width: 150px;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.choixCompte{
+		font-size: 15px;
+		width: 400px !important;
+		text-align: center !important;
+		height: 240px;
+		border-right: 3px solid lightgrey;
+		border-bottom: 3px solid lightgrey;
+		border-top: 1px solid lightgrey;
+		border-left: 1px solid lightgrey;
+		margin-top: 3%;
+		position: fixed;
+		margin-left: 17%;
+		background: url(../images/lys.jpg);
+	}
+	.choixCompte input[type=submit]{
+		display: inline-block;
+		width: 100% !important;
+		margin: 0 !important;
+		padding : 0 !important;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.choixCompte .ligne{
+		text-align: center;
+		padding-top: 60px;
+	}
+	
+	
+	.ligne a:hover, input[type="submit"]:hover, input[type="reset"]:hover,
+	form .ligne input[type="submit"]:hover, .connexion input#submit:hover {
+	    cursor: pointer;
+	    background-color: #27740e;
+	
+	}
+	
+	.obligatoire {
+	    color: #BB0B0B;
+	    font-weight: bold;
+	}
+	#obligatoire {
+	    border: 0;
+	    color: #BB0B0B;
+	    margin-bottom: 5px;
+	    box-shadow: none;
+	}
+	
+	
+	/****************************************************/
+	/*styles pour le page d'accueil                     */
+	/****************************************************/ 
+	.texteAccueil {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		font-size: 17px;
+	}
+	
+	.texteAccueil h1{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	
+	.texteAccueil p{
+		padding-top: 20px;
+		text-align: justify;
+	}
+	
+	.images {
+		text-align: center;
+		padding-top: 30px;
+	}
+	.images img{
+		height: 150px;
+		margin: 10px;
+		padding-bottom: 100px;
+	}
+	
+	
+	
+	/****************************************************/
+	/*styles pour les rubriques de la zone droite       */
+	/****************************************************/ 
+	.articles{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 150px;	
+		margin-top: 35px;	
+	}
+	
+	.articles .separer{
+		margin-top: 5%;
+    	margin-bottom: 5%;
+	}
+	
+	.titre{
+		color: #fff;
+		background-color : #434541;
+		width: 100%;
+		margin: 0px !important;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: left;
+		padding-right: 0px;	
+	}
+	
+	
+	.image{
+		margin-top: 10px;
+	}
+	
+	.image img{
+		max-width: 60%;
+		max-height: 300px;
+	}
+	
+	.article .corps{
+		background-color: #fff; 
+		text-align: justify;
+		padding: 15px;
+	}
+	.article {
+		 margin-top: 20px;
+	}
+		
+	
+	/***********************************************************************************/
+	/*styles pour les cases de chaque onglet (ex: Maladie et ravageur pour plante      */
+	/***********************************************************************************/ 
+	.maladiePlante, .ravageurPlante, .planteRavageur , 
+	.organeRavageur, .planteMaladie, .organeMaladie,
+	.maladieOrgane, .ravageurOrgane,.maladieTraitement, .ravageurTraitement,
+	.traitementRavageur{
+		text-align: justify;
+		margin: auto;
+		padding: 0;
+		display: inline-grid;	
+		width: 30%;	
+	}
+	.ravageurPlante, .organeMaladie
+	, .ravageurOrgane, .ravageurTraitement{
+		margin-left: 15%;
+	}
+	
+	.maladiePlante ul, .ravageurPlante ul , .planteRavageur ul , .organeRavageur ul,
+	 .planteMaladie ul , .organeMaladie ul, .maladieOrgane ul , .ravageurOrgane ul
+	 , .maladieTraitement ul , .ravageurTraitement ul, .traitementRavageur ul{
+		list-style-type: none; 
+		overflow-x: hidden;
+		height: 150px;
+		overflow-y: auto;
+	}
+	
+	.maladiePlante ul li, .ravageurPlante ul li 
+	, .planteRavageur ul li , .organeRavageur ul li,
+	.planteMaladie ul li , .organeMaladie ul li 
+	, .maladieOrgane ul li, .ravageurOrgane ul li
+	, .maladieTraitement ul li, .ravageurTraitement ul li
+	,.traitementRavageur ul li{
+		height: 20px;
+		display: inline-block;
+		font-size: 15px;
+		font-family: Helvetica;
+		width: 300px;
+		margin-top: 1%;
+	}
+	
+	.maladiePlante ul li a, .ravageurPlante ul li a , .planteRavageur ul li a ,
+	 .organeRavageur ul li a, .planteMaladie ul li a, .organeMaladie ul li a 
+	 , .maladieOrgane ul li a, .ravageurOrgane ul li a
+	 , .maladieTraitement ul li a, .ravageurTraitement ul li a
+	 ,.traitementRavageur ul li a{
+		display: inline-block;
+	    text-decoration: none;
+	  	color: grey;  
+	  	vertical-align: middle;
+	}
+	
+	.maladiePlante ul li a:hover, .ravageurPlante ul li a:hover ,
+	 .planteRavageur ul li a:hover , .organeRavageur ul li a:hover
+	 , .planteMaladie ul li a:hover, .organeMaladie ul li a:hover
+	 , .maladieOrgane ul li a:hover, .ravageurOrgane ul li a:hover
+	 , .maladieTraitement ul li a:hover, .ravageurTraitement ul li a:hover
+	 ,.traitementRavageur ul li a:hover {
+	  color: #292924;
+	  font-weight: bold;
+	}
+	
+	/************************************************************************/
+	/*Tableau pour afficher les informations d'un onglet (ex: Ravageur)     */
+	/************************************************************************/ 
+	
+	.article form{
+		text-align: left;
+		width: 100%;
+
+	}
+	
+	.article form .ligne .image{
+		text-align: center;
+	}
+	.article form .ligne .label{
+		display: inline-block;
+		width: 10%;
+	}
+	
+	/************************************************************************/
+	/*Boutons				(ex: plante, maladie, ravageur)				    */
+	/************************************************************************/ 
+	.formPlante .ligne input, .formAjout .ligne input, .formRavageur .ligne input, .formIntervenant .ligne input
+	, .formAjoutPlante .ligne input[type=submit], .formAjoutRavageur .ligne input[type=submit], .formModifPlante .ligne input[type=submit],
+	.formModifRavageur .ligne input[type=submit]
+	, .formSupprPlante .ligne input[type=submit], .formSupprRavageur .ligne input[type=submit]
+	, .formGerer .ligne input[type=submit], form .ligne input[type=submit], form input[type=submit]
+	,.formAjoutMaladie .ligne input[type=submit], .formModifMaladie .ligne input[type=submit], .formSupprMaladie .ligne input[type=submit], .formSupprMaladie .ligne input,
+	.formAjoutIntervenant .ligne input[type=submit] {
+	    background-color: #434541;
+	    width: 15.2%;
+	    height : 30px;
+	    margin-left: 20px;
+	    margin-right: auto;
+	    border: solid black 1px;
+	    text-align: center;
+	    color: #fff;
+	}
+	 .formGerer .ligne input[type=submit]{
+	 	width : 15%;
+	 	margin : 0;
+	 	
+	 }
+	  .formGerer .ligne{
+	  	text-align: center;
+	  }
+	
+	
+	/*Text area des formulaires*/
+	form .ligne textarea{
+	    resize: none;
+	    width : 80%;
+	    height: 15em;
+	    font-family: "Lucida Sans",sourcesanspro,arial,sans-serif;
+	}
+	.formModifPlante .ligne, .formAjoutPlante .ligne, .formSupprPlante .ligne
+	, .formAjoutRavageur .ligne, .formSupprRavageur .ligne, .formModifRavageur .ligne, .formAjoutOrgane .ligne, .formModifOrgane .ligne, .formSupprOrgane .ligne,
+	.formAjoutMaladie .ligne, .formModifMaladie .ligne, .formSupprMaladie .ligne,
+	.formAjoutIntervenant .ligne {
+	   margin-top: 1em;
+	   text-align: center;
+	}
+	.formModifPlante .ligne label, .formAjoutPlante .ligne label, .formSupprPlante .ligne label
+	, .formAjoutRavageur .ligne label, .formSupprRavageur .ligne label, .formModifRavageur .ligne label
+	, .formAjoutOrgane .ligne label,
+ .formModifOrgane .ligne label, .formSupprOrgane .ligne label, .formAjoutMaladie .ligne label, .formModifMaladie .ligne label,
+  .formSupprMaladie .ligne label,
+  .formAjoutIntervenant .ligne label {
+	    width: 20%;
+	    display: inline-block;
+	}
+	.formModifPlante .ligne input[type=text], .formAjoutPlante .ligne input[type=text],.formAjoutRavageur .ligne input[type=number]
+	, .formSupprPlante .ligne input[type=text], .formSupprRavageur .ligne input[type=text],.formSupprRavageur .ligne input[type=number]
+	, .formAjoutRavageur .ligne input[type=text],.formModifRavageur .ligne input[type=text],.formModifRavageur .ligne input[type=number]
+	, .formAjoutOrgane .ligne input[type=text],
+	 .formModifOrgane .ligne input[type=text], .formSupprOrgane .ligne input[type=text], .formAjoutMaladie .ligne input[type=text], 
+	 .formModifMaladie .ligne input[type=text], .formSupprMaladie .ligne input[type=text],
+	 .formAjoutIntervenant .ligne input[type=text], .formAjoutIntervenant .ligne input[type=password], .formAjoutIntervenant .ligne input[type=reset] {
+   		width: 20%;   
+	}
+	
+	
+	.formPlante .ligne, .formRavageur .ligne, .formMaladie .ligne, .formOrgane .ligne{
+		text-align: center;
+	}
+	
+	.formAjout .ligne input[type=submit]{ 
+		position: fixed;
+	    top: 666px;
+	    left: 0;
+	}
+	form .ligne select {
+		border-radius: 3px;
+		background-color: #fff;
+		color: #444;
+		padding: .5em;
+		padding-right: 0.5em;
+		padding-right: 1.3em;
+		margin: 0;
+	}
+	
+	form .ligne select option {
+	    color:  #444;
+	}
+	
+	/************************************************************************/
+	/*			Tab des bioagresseurs d'une plante						    */
+	/************************************************************************/ 
+	
+	.tabBioagresseur{
+		width: 100%;
+		margin-top: 5%;
+	}
+	.boutonSupprSensible, .boutonSupprTraiter, .boutonSupprAffecter{
+		width: 75% !important;
+	}
+	
+	/************************************************************************/
+	/*			Fin - Tab des bioagresseurs d'une plante				    */
+	/************************************************************************/ 
+	
+	
+	
+	
+	
+	
